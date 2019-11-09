@@ -50,30 +50,35 @@
   };
 </script>
 
-  <meta name="description" content="记录生活，记录创造，对抗虚无">
-<meta property="og:type" content="website">
-<meta property="og:title" content="仰度">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="DescribeMommy! what is a file descriptor in Linux?  try to play the wargame your self but if you are ABSOLUTE beginner, follow this tutorial link:https:&#x2F;&#x2F;youtu.be&#x2F;971eZhMHQQw  1ssh fd@pwnable.kr -p222">
+<meta name="keywords" content="pwn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pwnable.kr-fd">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;09&#x2F;Pwnable.kr-fd&#x2F;index.html">
 <meta property="og:site_name" content="仰度">
-<meta property="og:description" content="记录生活，记录创造，对抗虚无">
+<meta property="og:description" content="DescribeMommy! what is a file descriptor in Linux?  try to play the wargame your self but if you are ABSOLUTE beginner, follow this tutorial link:https:&#x2F;&#x2F;youtu.be&#x2F;971eZhMHQQw  1ssh fd@pwnable.kr -p222">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;9F30CD71B9019265478B8D0B4F5D4635.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;FE196BC03CE0E323B9C072057E355FDB.png">
+<meta property="og:updated_time" content="2019-11-09T03:59:25.940Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;9F30CD71B9019265478B8D0B4F5D4635.png">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2019/11/09/Pwnable.kr-fd/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>仰度</title>
+  <title>Pwnable.kr-fd | 仰度</title>
   
 
 
@@ -179,10 +184,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/09/Pwnable.kr-fd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -196,8 +201,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/09/Pwnable.kr-fd/" class="post-title-link" itemprop="url">Pwnable.kr-fd</a>
+          Pwnable.kr-fd
         </h1>
 
         <div class="post-meta">
@@ -233,7 +237,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="Describe"><a href="#Describe" class="headerlink" title="Describe"></a>Describe</h2><p>Mommy! what is a file descriptor in Linux?</p>
+        <h2 id="Describe"><a href="#Describe" class="headerlink" title="Describe"></a>Describe</h2><p>Mommy! what is a file descriptor in Linux?</p>
 <ul>
 <li>try to play the wargame your self but if you are ABSOLUTE beginner, follow this tutorial link:<br><a href="https://youtu.be/971eZhMHQQw" target="_blank" rel="noopener">https://youtu.be/971eZhMHQQw</a></li>
 </ul>
@@ -257,24 +261,27 @@
 <p>因此，只需要输入的<code>argv[1] == 0x1234</code>即可，从而让<code>buf</code>接受<code>stdin</code>，从而获得<code>flag</code>.</p>
 <p><img src="/images/FE196BC03CE0E323B9C072057E355FDB.png" alt="Screen Shot 2019-11-09 at 11.19.56 AM.png"></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/pwn/" rel="tag"># pwn</a>
+          </div>
+
+        
+
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -303,6 +310,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Describe"><span class="nav-number">1.</span> <span class="nav-text">Describe</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目分析"><span class="nav-number">2.</span> <span class="nav-text">题目分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
